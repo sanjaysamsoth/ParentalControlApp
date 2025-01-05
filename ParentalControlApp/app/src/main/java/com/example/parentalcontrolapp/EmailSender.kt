@@ -13,7 +13,6 @@ object EmailSender {
     private const val EMAIL_API_URL = "http://192.168.29.155:8080/api/email/send"
 
     fun sendEmail(context: Context, subject: String, messageBody: String) {
-        // Retrieve the logged-in parent's email from SharedPreferences
         val sharedPreferences = context.getSharedPreferences("ParentalControlApp", Context.MODE_PRIVATE)
         val toEmail = sharedPreferences.getString("loggedInEmail", null)
 
@@ -22,14 +21,12 @@ object EmailSender {
             return
         }
 
-        // Prepare the request body
         val emailData = JSONObject().apply {
             put("toEmail", toEmail)
             put("subject", subject)
             put("messageBody", messageBody)
         }
 
-        // create and send the request
         val requestQueue = Volley.newRequestQueue(context)
         val jsonObjectRequest = JsonObjectRequest(
             Request.Method.POST,

@@ -58,7 +58,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        // Check permissions and start monitoring
         checkUsageStatsPermission()
         createNotificationChannel()
         startMonitoring()

@@ -32,7 +32,6 @@ class LoginActivity : AppCompatActivity() {
                 auth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener { task ->
                         if (task.isSuccessful) {
-                            // Save logged-in email locally
                             val sharedPreferences = getSharedPreferences("ParentalControlApp", MODE_PRIVATE)
                             sharedPreferences.edit().putString("loggedInEmail", email).apply()
 
@@ -41,7 +40,6 @@ class LoginActivity : AppCompatActivity() {
                             startActivity(Intent(this, MainActivity::class.java))
                             finish()
                         } else {
-
                             Toast.makeText(this, "Login Failed: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
                         }
                     }
