@@ -38,11 +38,10 @@ class LoginActivity : AppCompatActivity() {
 
                             Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
 
-                            // Navigate to MainActivity
                             startActivity(Intent(this, MainActivity::class.java))
                             finish()
                         } else {
-                            // Display error message
+
                             Toast.makeText(this, "Login Failed: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
                         }
                     }

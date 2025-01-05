@@ -47,12 +47,11 @@ class MainActivity : AppCompatActivity() {
         restrictedAppsRecyclerView.layoutManager = LinearLayoutManager(this)
         restrictedAppsRecyclerView.adapter = adapter
 
-        // Check and request POST_NOTIFICATIONS permission for Android 13+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             if (checkSelfPermission(android.Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
                 requestPermissions(arrayOf(android.Manifest.permission.POST_NOTIFICATIONS), REQUEST_POST_NOTIFICATIONS)
             }
-            // Button to open Accessibility Settings
+
             val openAccessibilityButton: Button = findViewById(R.id.open_accessibility_button)
             openAccessibilityButton.setOnClickListener {
                 openAccessibilitySettings()
@@ -61,10 +60,9 @@ class MainActivity : AppCompatActivity() {
 
         // Check permissions and start monitoring
         checkUsageStatsPermission()
-        createNotificationChannel() // Create the notification channel here
+        createNotificationChannel()
         startMonitoring()
 
-        // Button click to add restricted app
         addAppButton.setOnClickListener {
             val packageName = appPackageInput.text.toString().trim()
             if (packageName.isNotEmpty()) {
@@ -74,7 +72,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    // Function to open Accessibility Settings
     private fun openAccessibilitySettings() {
         try {
             val intent = Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
@@ -122,13 +119,13 @@ class MainActivity : AppCompatActivity() {
             if (restrictedAppOpened) {
                 sendNotification("Restricted app opened!")
             }
-            handler.postDelayed(this, 5000) // Check every 5 seconds
+            handler.postDelayed(this, 5000)
         }
     }
 
     private fun isRestrictedAppInForeground(): Boolean {
         val endTime = System.currentTimeMillis()
-        val startTime = endTime - 5000 // Check usage over the last 5 seconds
+        val startTime = endTime - 5000
 
         val usageEvents = usageStatsManager.queryEvents(startTime, endTime)
         val event = UsageEvents.Event()
@@ -145,7 +142,7 @@ class MainActivity : AppCompatActivity() {
     private fun sendNotification(message: String) {
         val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         val notification = NotificationCompat.Builder(this, "alert_channel")
-            .setSmallIcon(R.drawable.ic_launcher_foreground) // Replace with an appropriate icon
+            .setSmallIcon(R.drawable.ic_launcher_foreground)
             .setContentTitle("Parental Control Alert")
             .setContentText(message)
             .setPriority(NotificationCompat.PRIORITY_HIGH)
@@ -157,9 +154,7 @@ class MainActivity : AppCompatActivity() {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         if (requestCode == REQUEST_POST_NOTIFICATIONS) {
             if ((grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED)) {
-                // Permission granted, you can now post notifications
             } else {
-                // Permission denied, notify the user that notifications won’t work
                 Toast.makeText(this, "Notifications permission denied. Alerts may not be shown.", Toast.LENGTH_SHORT).show()
             }
         }
