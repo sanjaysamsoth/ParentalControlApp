@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ParentalControlApp</string>
+    <string name="accessibility_service_description">Monitors screen content for suspicious keywords to alert parents of potential risks.</string>
+</resources>

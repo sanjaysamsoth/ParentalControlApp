@@ -1,0 +1,91 @@
+<!-- res/values/suspicious_keywords.xml -->
+<resources>
+    <string-array name="suspicious_keywords">
+        <!-- English keywords -->
+        <item>violence</item>
+        <item>attack</item>
+        <item>killing</item>
+        <item>war</item>
+        <item>injuries</item>
+        <item>deception</item>
+        <item>threat</item>
+        <item>abuse</item>
+        <item>insulting</item>
+        <item>pornography</item>
+        <item>obscene</item>
+        <item>prostitution</item>
+        <item>nudes</item>
+        <item>sexual</item>
+        <item>suicide</item>
+        <item>loneliness</item>
+        <item>sadness</item>
+        <item>despair</item>
+        <item>alcohol</item>
+        <item>drugs</item>
+        <item>cigarettes</item>
+        <item>intoxication</item>
+        <item>betting</item>
+        <item>commitment in illegal activities</item>
+        <item>fraud</item>
+        <item>money-related scams</item>
+        <item>explicit words</item>
+        <item>swearing</item>
+
+        <!-- Telugu Romanized keywords -->
+        <item>hinsa</item>
+        <item>daadi</item>
+        <item>champadam</item>
+        <item>yuddham</item>
+        <item>gayalu</item>
+        <item>vanchana</item>
+        <item>bedirimpulu</item>
+        <item>titlu</item>
+        <item>avamaninchadam</item>
+        <item>ashliilam</item>
+        <item>asabhya</item>
+        <item>vyabhicharam</item>
+        <item>nudes</item>
+        <item>laingika</item>
+        <item>aatmahatya</item>
+        <item>ontaritanam</item>
+        <item>dukham</item>
+        <item>nirasah</item>
+        <item>madhyam</item>
+        <item>drugs</item>
+        <item>cigarettes</item>
+        <item>mattu</item>
+        <item>pandem</item>
+        <item>kattubadi</item>
+        <item>mosam</item>
+        <item>dabbulu</item>
+        <item>ashliila padalu</item>
+        <item>tidutunna</item>
+        <item>golimpu</item>
+        <item>bombu</item>
+        <item>ayudham</item>
+        <item>rowdy</item>
+        <item>balathkaram</item>
+        <item>chithraalu</item>
+        <item>ashlilalu</item>
+        <item>laddu</item>
+        <item>maaranamu</item>
+        <item>paniki rani</item>
+        <item>veedipani</item>
+        <item>dovalu</item>
+        <item>narikela</item>
+        <item>maatla dapudu</item>
+        <item>kuthurusthunnav</item>
+        <item>devuda</item>
+        <item>ayigaa</item>
+        <item>veshaalu</item>
+        <item>oddhu</item>
+        <item>baadhakaalu</item>
+        <item>kalakalalu</item>
+        <item>samasyaalu</item>
+        <item>kothi</item>
+        <item>macha</item>
+        <item>bayata chadivina</item>
+        <item>vaadi pichi</item>
+        <item>jaati theesi</item>
+    </string-array>
+</resources>
