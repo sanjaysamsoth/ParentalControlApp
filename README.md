@@ -86,7 +86,7 @@ The **Parental Control Android App** is a comprehensive solution designed to hel
 ## 📂 Additional Information
 
 For a detailed explanation of the project, including the system architecture, implementation details, and use cases, please refer to the following documents:
-- [Project Report (PDF)]([docs/Report - Parental Control Android App.pdf](https://github.com/sanjaysamsoth/ParentalControlApp/blob/796d8a11e0c7a345576be087e9b34f241845ab78/docs/Report%20-%20Parental%20Control%20Android%20App.pdf))
-- [Project Presentation (PPT)]([docs/PPT - Parental Control Android App.pdf](https://github.com/sanjaysamsoth/ParentalControlApp/blob/796d8a11e0c7a345576be087e9b34f241845ab78/docs/PPT%20-%20Parental%20Control%20App.pdf))
+- [Project Report (PDF)]([docs/Report - Parental Control Android App.pdf](https://github.com/sanjaysamsoth/ParentalControlApp/blob/48c28cf5cab5fb9f07a487c814a50fc1e426f81c/docs/Report%20-%20Parental%20Control%20Android%20App.pdf))
+- [Project Presentation (PPT)]([docs/PPT - Parental Control Android App.pdf](https://github.com/sanjaysamsoth/ParentalControlApp/blob/48c28cf5cab5fb9f07a487c814a50fc1e426f81c/docs/PPT%20-%20Parental%20Control%20Android%20App.pdf))
 
 ---
