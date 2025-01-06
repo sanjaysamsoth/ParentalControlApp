@@ -48,10 +48,10 @@ The **Parental Control Android App** is a comprehensive solution designed to hel
 1. Clone the repository:
    ```bash
    git clone https://github.com/sanjaysamsoth/ParentalControlApp.git
-2. Navigate to the `android-app` folder and open it in **Android Studio**:
+2. Navigate to the `ParentalControlApp` folder and open it in **Android Studio**:
    - Build the project and run it on an Android emulator or device.
 
-3. Navigate to the `spring-boot-backend` folder and open it in **IntelliJ IDEA**:
+3. Navigate to the `parentalcontrolmail` folder and open it in **IntelliJ IDEA**:
    - Run the Spring Boot application to enable email notifications.
 
 4. Configure Firebase Authentication:
